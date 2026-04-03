@@ -1,2 +1,60 @@
+# Environment variables
 .env
-.env
+.env.local
+.env.*.local
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Streamlit
+.streamlit/cache/
+
+# Virtual environment for RAG
+rag_en/
+
+# Data (optional - exclude large files)
+data/*.pdf
+data/*.pptx
+data/*.docx
+
+# Node modules (if any frontend)
+node_modules/
+npm-debug.log
+
+# Generated files
+*.pkl
+*.pickle
+*.cache

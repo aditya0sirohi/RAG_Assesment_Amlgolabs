@@ -1,1 +1,16 @@
-faiss_index/* filter=lfs diff=lfs merge=lfs -text
+# Standardize line endings for cross-platform compatibility
+
+# Auto normalize line endings for all files
+* text=auto
+
+# Explicitly set line endings for key file types
+*.py text eol=lf
+*.ipynb text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+
+# Binary files
+*.faiss binary
+*.pkl binary
+*.pdf binary
