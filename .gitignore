@@ -55,6 +55,9 @@ node_modules/
 npm-debug.log
 
 # Generated files
-*.pkl
 *.pickle
 *.cache
+
+# Exclude pkl files except in vectordb (needed for FAISS on Streamlit)
+*.pkl
+!vectordb/*.pkl
