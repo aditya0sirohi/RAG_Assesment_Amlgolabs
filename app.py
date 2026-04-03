@@ -5,6 +5,8 @@ import time
 import streamlit as st
 from src.pipeline import RAGPipeline
 
+st.set_page_config(page_title="RAG Chatbot", layout="wide")
+
 # Custom CSS for better UX
 st.markdown("""
 <style>
@@ -22,8 +24,6 @@ st.markdown("""
     }
 </style>
 """, unsafe_allow_html=True)
-
-st.set_page_config(page_title="RAG Chatbot", layout="wide")
 st.title("🤖 RAG Chatbot")
 st.markdown("*Ask questions about your documents. Powered by semantic search and AI.*")
 
